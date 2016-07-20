@@ -12,7 +12,7 @@ typedef struct ficha ficha_t;
 struct ficha{
 	int cod, idade, rg;
 	int sexo; //0 para homem, 1 para mulher
-	char nome[50];
+	char nome[80];
 };
 
 typedef struct arv arvore_t;

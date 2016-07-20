@@ -1,5 +1,5 @@
 /*Árvore de busca binária implementada em C
-Autor: Cristofer Alexandre Oswald
+Autor: Cristofer Alexandre Oswald e Bruno Cesar Puli Dala Rosa
 Data: 18/07/2016 */
 
 #include <stdio.h>
@@ -14,7 +14,7 @@ int main(){
 	while(op != 0){
 		system(CLS);
 		printf("Implementação de árvore binária de busca em C\n\n");
-		printf("\t1 - Criar nova árvore || 2 - Inserir ficha || 3 - Buscar ficha\n\t4 - Exibir elementos  || 4 - Remover ficha || 0 - Sair\n\n");
+		printf("\t1 - Inserir ficha || 2 - Buscar ficha\n\t3 - Exibir elementos  || 4 - Remover ficha || 0 - Sair\n\n");
 		printf("Selecione o que deseja fazer: ");
 		scanf(" %d", &op);
 		switch(op){
@@ -37,7 +37,7 @@ int main(){
 				printf("Escolha inválida, digite novamente\n");
 				system(SLEEP " 1");
 				break;
-	
+
 		}
 	}
 	system(CLS);
