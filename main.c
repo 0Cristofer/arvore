@@ -9,22 +9,36 @@ Data: 18/07/2016 */
 
 int main(){
 	int op = 1;
-	arvore_t *a;
+	ficha_t *ficha;
+	arvore_t *a, *treeRG, *treeCOD;
+	treeRG = NULL;
+	treeCOD = NULL;
 
 	while(op != 0){
-		system(CLS);
+		//system(CLS);
 		printf("Implementação de árvore binária de busca em C\n\n");
-		printf("\t1 - Inserir ficha || 2 - Buscar ficha\n\t3 - Exibir elementos  || 4 - Remover ficha || 0 - Sair\n\n");
+		printf("\t1 - Inserir ficha || 2 - Buscar ficha\n\t3 - Relatório || 4 - Remover ficha || 0 - Sair\n\n");
 		printf("Selecione o que deseja fazer: ");
 		scanf(" %d", &op);
 		switch(op){
 			case 1:
+				a = malloc(sizeof(arvore_t));
+				ficha = malloc(sizeof(ficha_t));
+				preenche(ficha);
+				a->info = ficha;
+				printf("eu nao creio\n");
+				insereRG(treeRG, a);
+				printf("eu nao creio1\n");
+				insereCOD(treeCOD, a);
+				printf("eu nao creio2\n");
 				break;
 
 			case 2:
 				break;
 
 			case 3:
+				relatorioRG(treeRG);
+				relatorioCOD(treeCOD);
 				break;
 
 			case 4:
