@@ -10,7 +10,7 @@ Data: 18/07/2016 */
 int main(){
 	int op = 1;
 	ficha_t *ficha;
-	arvore_t *a, *treeRG, *treeCOD;
+	arvore_t *node_rg, *node_cod, *treeRG, *treeCOD;
 	treeRG = NULL;
 	treeCOD = NULL;
 
@@ -22,15 +22,19 @@ int main(){
 		scanf(" %d", &op);
 		switch(op){
 			case 1:
-				a = malloc(sizeof(arvore_t));
 				ficha = malloc(sizeof(ficha_t));
 				preenche(ficha);
-				a->info = ficha;
-				printf("eu nao creio\n");
-				insereRG(treeRG, a);
-				printf("eu nao creio1\n");
-				insereCOD(treeCOD, a);
-				printf("eu nao creio2\n");
+
+				node_rg = malloc(sizeof(arvore_t));
+				node_cod = malloc(sizeof(arvore_t));
+				node_rg->info = ficha;
+				node_cod->info = ficha;
+
+				printf("InsereRG\n");
+				insereRG(treeRG, node_rg);
+				printf("insereCOD\n");
+				insereCOD(treeCOD, node_cod);
+				printf("fim\n");
 				break;
 
 			case 2:

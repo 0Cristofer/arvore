@@ -23,17 +23,19 @@ void printa(ficha_t *ficha){
 }
 
 void insereRG(arvore_t *tree, arvore_t *a){
-    printf("morrerg\n");
     if(tree == NULL){
+        printf("treeRG Null\n");
         tree = a;
         tree->esq = NULL;
         tree->dir = NULL;
     }
     else{
         if(tree->info->rg < a->info->rg){
+            printf("RG Dir\n");
             insereRG(tree->dir, a);
         }
         else if(tree->info->rg > a->info->rg){
+            printf("RG Esq\n");
             insereRG(tree->esq, a);
         }
         else{
@@ -43,26 +45,22 @@ void insereRG(arvore_t *tree, arvore_t *a){
 }
 
 void insereCOD(arvore_t *tree, arvore_t *a){
-    printf("morre\n");
     if(tree == NULL){
         fflush(stdout);
-        printf("null");
+        printf("TreeCOD Null\n");
         tree = a;
         tree->esq = NULL;
         tree->dir = NULL;
     }
     else{
-        printf("n null\n");
-        fflush(stdout);
-            
         if(tree->info->cod < a->info->cod){
-            printf("direita");
+            printf("COD dir\n");
             fflush(stdout);
 
             insereCOD(tree->dir, a);
         }
         else if(tree->info->cod > a->info->cod){
-            printf("esquerda");
+            printf("COD Esq\n");
             fflush(stdout);
 
             insereCOD(tree->esq, a);
@@ -76,9 +74,9 @@ void insereCOD(arvore_t *tree, arvore_t *a){
 }
 
 void relatorioRG(arvore_t *tree){
-    printf("relatorio\n");
+    printf("RG relatorio\n");
     if(tree == NULL){
-        printf("null\n");
+        printf(" RG relatorio null\n");
     }
     if(tree->esq != NULL){
         relatorioRG(tree->esq);
