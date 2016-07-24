@@ -1,1 +1,181 @@
-[3;J[H[2J[3;J[H[2J[3;J[H[2J[3;J[H[2J[3;J[H[2J[3;J[H[2J[3;J[H[2J[3;J[H[2J[3;J[H[2J[3;J[H[2J[3;J[H[2J[3;J[H[2J[3;J[H[2J[3;J[H[2J[3;J[H[2J[3;J[H[2J[3;J[H[2J
+[3;J[H[2J[3;J[H[2J[3;J[H[2J[3;J[H[2J[3;J[H[2J[3;J[H[2J[3;J[H[2J[3;J[H[2JImplementação de árvore binária de busca em C
+
+	1 - Inserir ficha || 2 - Buscar ficha
+	3 - Relatório || 4 - Remover ficha || 0 - Sair
+
+Selecione o que deseja fazer: Cadastrando uma nova ficha
+Insira o código: Insira o nome: Insira a idade: Insira o sexo, 0 para masculino, 1 para femininoInsira o RG: Cadastrado completo!
+Implementação de árvore binária de busca em C
+
+	1 - Inserir ficha || 2 - Buscar ficha
+	3 - Relatório || 4 - Remover ficha || 0 - Sair
+
+Selecione o que deseja fazer: Cadastrando uma nova ficha
+Insira o código: Insira o nome: Insira a idade: Insira o sexo, 0 para masculino, 1 para femininoInsira o RG: Cadastrado completo!
+Implementação de árvore binária de busca em C
+
+	1 - Inserir ficha || 2 - Buscar ficha
+	3 - Relatório || 4 - Remover ficha || 0 - Sair
+
+Selecione o que deseja fazer: Cadastrando uma nova ficha
+Insira o código: Insira o nome: Insira a idade: Insira o sexo, 0 para masculino, 1 para femininoInsira o RG: Cadastrado completo!
+Implementação de árvore binária de busca em C
+
+	1 - Inserir ficha || 2 - Buscar ficha
+	3 - Relatório || 4 - Remover ficha || 0 - Sair
+
+Selecione o que deseja fazer: Cadastrando uma nova ficha
+Insira o código: Insira o nome: Insira a idade: Insira o sexo, 0 para masculino, 1 para femininoInsira o RG: Cadastrado completo!
+Implementação de árvore binária de busca em C
+
+	1 - Inserir ficha || 2 - Buscar ficha
+	3 - Relatório || 4 - Remover ficha || 0 - Sair
+
+Selecione o que deseja fazer: Cadastrando uma nova ficha
+Insira o código: Insira o nome: Insira a idade: Insira o sexo, 0 para masculino, 1 para femininoInsira o RG: Cadastrado completo!
+Implementação de árvore binária de busca em C
+
+	1 - Inserir ficha || 2 - Buscar ficha
+	3 - Relatório || 4 - Remover ficha || 0 - Sair
+
+Selecione o que deseja fazer: Cadastrando uma nova ficha
+Insira o código: Insira o nome: Insira a idade: Insira o sexo, 0 para masculino, 1 para femininoInsira o RG: Cadastrado completo!
+Implementação de árvore binária de busca em C
+
+	1 - Inserir ficha || 2 - Buscar ficha
+	3 - Relatório || 4 - Remover ficha || 0 - Sair
+
+Selecione o que deseja fazer: Cadastrando uma nova ficha
+Insira o código: Insira o nome: Insira a idade: Insira o sexo, 0 para masculino, 1 para femininoInsira o RG: Cadastrado completo!
+Implementação de árvore binária de busca em C
+
+	1 - Inserir ficha || 2 - Buscar ficha
+	3 - Relatório || 4 - Remover ficha || 0 - Sair
+
+Selecione o que deseja fazer: Cadastrando uma nova ficha
+Insira o código: Insira o nome: Insira a idade: Insira o sexo, 0 para masculino, 1 para femininoInsira o RG: Cadastrado completo!
+Implementação de árvore binária de busca em C
+
+	1 - Inserir ficha || 2 - Buscar ficha
+	3 - Relatório || 4 - Remover ficha || 0 - Sair
+
+Selecione o que deseja fazer: RG relatorio
+RG relatorio
+RG relatorio
+Código : 2
+ bruno
+19 anos.Do sexo masculino
+Portado do RG 12312
+
+RG relatorio
+RG relatorio
+Código : 9
+ luis
+17 anos.Do sexo masculino
+Portado do RG 41231
+
+RG relatorio
+Código : 1
+ Cristofer
+18 anos.Do sexo masculino
+Portado do RG 73123
+
+RG relatorio
+RG relatorio
+RG relatorio
+Código : 8
+ marcelo
+21 anos.Do sexo masculino
+Portado do RG 81276
+
+RG relatorio
+RG relatorio
+Código : 5
+ felipe
+16 anos.Do sexo masculino
+Portado do RG 95423
+
+RG relatorio
+RG relatorio
+RG relatorio
+Código : 7
+ guilherme
+22 anos.Do sexo masculino
+Portado do RG 254018
+
+RG relatorio
+Código : 6
+ narcizo
+15 anos.Do sexo masculino
+Portado do RG 434353
+
+RG relatorio
+Código : 3
+ gustavo
+20 anos.Do sexo masculino
+Portado do RG 542132
+
+RG relatorio
+COD relatorio
+COD relatorio
+Código : 1
+ Cristofer
+18 anos.Do sexo masculino
+Portado do RG 73123
+
+COD relatorio
+COD relatorio
+Código : 2
+ bruno
+19 anos.Do sexo masculino
+Portado do RG 12312
+
+COD relatorio
+COD relatorio
+Código : 3
+ gustavo
+20 anos.Do sexo masculino
+Portado do RG 542132
+
+COD relatorio
+COD relatorio
+COD relatorio
+COD relatorio
+Código : 5
+ felipe
+16 anos.Do sexo masculino
+Portado do RG 95423
+
+COD relatorio
+COD relatorio
+Código : 6
+ narcizo
+15 anos.Do sexo masculino
+Portado do RG 434353
+
+COD relatorio
+COD relatorio[3;J[H[2J
+Código : 7
+ guilherme
+22 anos.Do sexo masculino
+Portado do RG 254018
+
+COD relatorio
+Código : 8
+ marcelo
+21 anos.Do sexo masculino
+Portado do RG 81276
+
+COD relatorio
+Código : 9
+ luis
+17 anos.Do sexo masculino
+Portado do RG 41231
+
+COD relatorio
+Implementação de árvore binária de busca em C
+
+	1 - Inserir ficha || 2 - Buscar ficha
+	3 - Relatório || 4 - Remover ficha || 0 - Sair
+
+Selecione o que deseja fazer: 

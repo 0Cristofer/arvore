@@ -30,11 +30,8 @@ int main(){
 				node_rg->info = ficha;
 				node_cod->info = ficha;
 
-				printf("InsereRG\n");
-				insereRG(treeRG, node_rg);
-				printf("insereCOD\n");
-				insereCOD(treeCOD, node_cod);
-				printf("fim\n");
+				insereRG(&treeRG, &node_rg);
+				insereCOD(&treeCOD, &node_cod);
 				break;
 
 			case 2:

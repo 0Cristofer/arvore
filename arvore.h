@@ -23,8 +23,8 @@ struct arv{
 
 void preenche(ficha_t *ficha);
 void printa(ficha_t *ficha);
-void insereRG(arvore_t *tree, arvore_t *a);
-void insereCOD(arvore_t *tree, arvore_t *a);
+void insereRG(arvore_t **tree, arvore_t **a);
+void insereCOD(arvore_t **tree, arvore_t **a);
 void relatorioRG(arvore_t *tree);
 void relatorioCOD(arvore_t *tree);
 

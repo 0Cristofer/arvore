@@ -14,29 +14,26 @@ void printa(ficha_t *ficha){
     else{
         printf("Código : %d\n %s\n%d anos.", ficha->cod, ficha->nome, ficha->idade);
         if(ficha->sexo){
-            printf("Do sexo masculino\n");
-        } else{
             printf("Do sexo feminino\n");
+        } else{
+            printf("Do sexo masculino\n");
         }
         printf("Portado do RG %d\n\n", ficha->rg);
     }
 }
 
-void insereRG(arvore_t *tree, arvore_t *a){
-    if(tree == NULL){
-        printf("treeRG Null\n");
-        tree = a;
-        tree->esq = NULL;
-        tree->dir = NULL;
+void insereRG(arvore_t **tree, arvore_t **a){
+    if(*(tree) == NULL){
+        (*a)->esq = NULL;
+        (*a)->dir = NULL;
+        *tree = *a;
     }
     else{
-        if(tree->info->rg < a->info->rg){
-            printf("RG Dir\n");
-            insereRG(tree->dir, a);
+        if((*tree)->info->rg < (*a)->info->rg){
+            insereRG(&(*tree)->dir, a);
         }
-        else if(tree->info->rg > a->info->rg){
-            printf("RG Esq\n");
-            insereRG(tree->esq, a);
+        else if((*tree)->info->rg > (*a)->info->rg){
+            insereRG(&(*tree)->esq, a);
         }
         else{
             printf("RG igual, abortando, registro não inserido\n");
@@ -44,59 +41,41 @@ void insereRG(arvore_t *tree, arvore_t *a){
     }
 }
 
-void insereCOD(arvore_t *tree, arvore_t *a){
-    if(tree == NULL){
-        fflush(stdout);
-        printf("TreeCOD Null\n");
-        tree = a;
-        tree->esq = NULL;
-        tree->dir = NULL;
+void insereCOD(arvore_t **tree, arvore_t **a){
+    if(*(tree) == NULL){
+        (*a)->esq = NULL;
+        (*a)->dir = NULL;
+        *tree = *a;
     }
     else{
-        if(tree->info->cod < a->info->cod){
-            printf("COD dir\n");
-            fflush(stdout);
-
-            insereCOD(tree->dir, a);
+        if((*tree)->info->cod < (*a)->info->cod){
+            insereCOD(&(*tree)->dir, a);
         }
-        else if(tree->info->cod > a->info->cod){
-            printf("COD Esq\n");
-            fflush(stdout);
-
-            insereCOD(tree->esq, a);
+        else if((*tree)->info->cod > (*a)->info->cod){
+            insereCOD(&(*tree)->esq, a);
         }
         else{
             printf("Código igual, abortando, registro não inserido\n");
         }
     }
-    fflush(stdout);
-
 }
 
 void relatorioRG(arvore_t *tree){
     printf("RG relatorio\n");
-    if(tree == NULL){
-        printf(" RG relatorio null\n");
-    }
-    if(tree->esq != NULL){
+
+    if(tree != NULL){
         relatorioRG(tree->esq);
-    }
-
-    printa(tree->info);
-
-    if(tree->dir != NULL){
+        printa(tree->info);
         relatorioRG(tree->dir);
     }
 }
 
 void relatorioCOD(arvore_t *tree){
-    if(tree->esq != NULL){
+    printf("COD relatorio\n");
+
+    if(tree != NULL){
         relatorioCOD(tree->esq);
-    }
-
-    printa(tree->info);
-
-    if(tree->dir != NULL){
+        printa(tree->info);
         relatorioCOD(tree->dir);
     }
 }
