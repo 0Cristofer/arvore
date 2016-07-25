@@ -59,28 +59,40 @@ int main(){
 
 			case 3:
 				printf("\t\t=== Relatório RG ===\n");
-				relatorioRG(treeRG);
+				//relatorioRG2(treeRG);
 
 				printf("\t\t=== Relatório COD ===\n");
-				relatorioCOD(treeCOD);
+				relatorioCOD2(treeCOD);
 				break;
 
 			case 4:
 				printf("Você deseja remover por Código ou RG? (0 - Código / 1 - RG)\n");
 				scanf("%d", &op2);
+
 				if (op2) {
 					printf("Insira o RG a ser excluído: ");
 					scanf("%d", &input);
 					node_rg = buscaRG(treeRG, input);
-					removeNoRG(&node_rg);
-
+					node_cod = buscaCOD(treeCOD, node_rg->info->cod);
 				}
 				else{
 					printf("Insira o Código a ser excluído: ");
 					scanf("%d", &input);
 					node_cod = buscaCOD(treeCOD, input);
-					removeNoCOD(&node_cod);
+					node_rg = buscaRG(treeRG, node_cod->info->rg);
 				}
+
+				ficha = node_cod->info;
+				removeNoCOD(&node_cod);
+				if(node_cod == NULL){
+					printf("NULL\n");
+				}
+				else{
+					printf("not NULL\n");
+				}
+				//removeNoRG(&node_rg);
+				printa(ficha);
+				free(ficha);
 				break;
 
 			case 0:

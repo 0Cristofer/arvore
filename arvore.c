@@ -69,14 +69,16 @@ arvore_t *minimo(arvore_t *tree){
 
 void removeNoCOD(arvore_t **cod){
     if((*cod)->esq == NULL){
-        free((*cod)->info);
-        free((*cod));
+        arvore_t *temp;
+        temp = (*cod);
         *cod = (*cod)->dir;
+        free(temp);
     }
     else if((*cod)->dir == NULL){
-        free((*cod)->info);
-        free((*cod));
+        arvore_t *temp;
+        temp = (*cod);
         *cod = (*cod)->esq;
+        free(temp);
     }
     else{
         arvore_t *d;
@@ -88,15 +90,16 @@ void removeNoCOD(arvore_t **cod){
 }
 
 void removeNoRG(arvore_t **rg){
+    arvore_t *temp;
     if((*rg)->esq == NULL){
-        free((*rg)->info);
+        temp = (*rg)->dir;
         free((*rg));
-        *rg = (*rg)->dir;
+        *rg = temp;
     }
     else if((*rg)->dir == NULL){
-        free((*rg)->info);
+        temp = (*rg)->esq;
         free((*rg));
-        *rg = (*rg)->esq;
+        *rg = temp;
     }
     else{
         arvore_t *d;
@@ -115,6 +118,14 @@ void relatorioRG(arvore_t *tree){
     }
 }
 
+void relatorioRG2(arvore_t *tree){
+    if(tree != NULL){
+        printa(tree->info);
+        relatorioRG2(tree->esq);
+        relatorioRG2(tree->dir);
+    }
+}
+
 void relatorioCOD(arvore_t *tree){
     if(tree != NULL){
         relatorioCOD(tree->esq);
@@ -123,13 +134,19 @@ void relatorioCOD(arvore_t *tree){
     }
 }
 
+void relatorioCOD2(arvore_t *tree){
+    if(tree != NULL){
+        printa(tree->info);
+        relatorioCOD2(tree->esq);
+        relatorioCOD2(tree->dir);
+    }
+}
+
 arvore_t* buscaRG(arvore_t *tree, int rg){
     if(tree != NULL){
         if (tree->info->rg < rg){
-            printf("entrando dir\n");
              return buscaRG(tree->dir, rg);
         } else if (tree->info->rg > rg){
-            printf("entrando esq\n");
             return buscaRG(tree->esq, rg);
         } else{
             return tree;
