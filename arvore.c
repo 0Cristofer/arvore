@@ -60,6 +60,21 @@ void insereCOD(arvore_t **tree, arvore_t **a){
     }
 }
 
+arvore_t *minimo(arvore_t *tree){
+    if(tree->esq != NULL){
+        return minimo(tree->esq);
+    }
+    return tree;
+}
+
+void removeNoCOD(arvore_t *tree, int COD){
+
+}
+
+void removeNoRG(arvore_t *tree, int RG){
+
+}
+
 void relatorioRG(arvore_t *tree){
     printf("RG relatorio\n");
 
