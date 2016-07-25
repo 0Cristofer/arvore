@@ -9,6 +9,8 @@ Data: 18/07/2016 */
 
 int main(){
 	int op = 1;
+	int op2;
+	int input;
 	ficha_t *ficha;
 	arvore_t *node_rg, *node_cod, *treeRG, *treeCOD;
 	treeRG = NULL;
@@ -35,6 +37,23 @@ int main(){
 				break;
 
 			case 2:
+				printf("Você deseja buscar por Código ou RG? (0 - Código / 1 - RG)\n");
+				scanf("%d", &op2);
+				if (op2) {
+					printf("Insira o RG a ser procurado: ");
+					scanf("%d", &input);
+					node_rg = buscaRG(treeRG, input);
+
+					if (node_rg != NULL) printa(node_rg->info);
+					else printf("RG não encontrado!\n");
+				} else {
+					printf("Insira o Código a ser procurado: ");
+					scanf("%d", &input);
+					node_cod = buscaCOD(treeCOD, input);
+
+					if (node_cod != NULL) printa(node_cod->info);
+					else printf("Código não encontrado!\n");
+				}
 				break;
 
 			case 3:

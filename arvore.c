@@ -12,7 +12,7 @@ void printa(ficha_t *ficha){
         printf("ERRO! Ficha == NULL!\n");
     }
     else{
-        printf("Código : %d\n %s\n%d anos.", ficha->cod, ficha->nome, ficha->idade);
+        printf("Código : %d\n%s , %d anos.\n", ficha->cod, ficha->nome, ficha->idade);
         if(ficha->sexo){
             printf("Do sexo feminino\n");
         } else{
@@ -77,6 +77,36 @@ void relatorioCOD(arvore_t *tree){
         relatorioCOD(tree->esq);
         printa(tree->info);
         relatorioCOD(tree->dir);
+    }
+}
+
+arvore_t* buscaRG(arvore_t *tree, int rg){
+    if(tree != NULL){
+        if (tree->info->rg > rg){
+             return buscaRG(tree->dir, rg);
+        } else if (tree->info->rg < rg){
+            return buscaRG(tree->esq, rg);
+        } else{
+            return tree;
+        }
+    } else{
+        return NULL;
+    }
+}
+
+arvore_t* buscaCOD(arvore_t *tree, int cod){
+    if(tree != NULL){
+        if (tree->info->cod > cod){
+            printf("entrando dir\n");
+            return buscaRG(tree->dir, cod);
+        } else if (tree->info->cod < cod){
+            printf("entrando esq\n");
+            return buscaRG(tree->esq, cod);
+        } else{
+            return tree;
+        }
+    } else{
+        return NULL;
     }
 }
 
