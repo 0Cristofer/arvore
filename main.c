@@ -57,7 +57,10 @@ int main(){
 				break;
 
 			case 3:
+				printf("\t\t=== Relatório RG ===\n");
 				relatorioRG(treeRG);
+
+				printf("\t\t=== Relatório COD ===\n");
 				relatorioCOD(treeCOD);
 				break;
 
