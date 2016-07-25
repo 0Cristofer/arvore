@@ -67,12 +67,44 @@ arvore_t *minimo(arvore_t *tree){
     return tree;
 }
 
-void removeNoCOD(arvore_t *tree, int COD){
-
+void removeNoCOD(arvore_t **cod){
+    if((*cod)->esq == NULL){
+        free((*cod)->info);
+        free((*cod));
+        *cod = (*cod)->dir;
+    }
+    else if((*cod)->dir == NULL){
+        free((*cod)->info);
+        free((*cod));
+        *cod = (*cod)->esq;
+    }
+    else{
+        arvore_t *d;
+        d = minimo((*cod)->dir);
+        (*cod)->info = d->info;
+        arvore_t *no = buscaCOD( (*cod)->dir, d->info->cod);
+        removeNoCOD(&no);
+    }
 }
 
-void removeNoRG(arvore_t *tree, int RG){
-
+void removeNoRG(arvore_t **rg){
+    if((*rg)->esq == NULL){
+        free((*rg)->info);
+        free((*rg));
+        *rg = (*rg)->dir;
+    }
+    else if((*rg)->dir == NULL){
+        free((*rg)->info);
+        free((*rg));
+        *rg = (*rg)->esq;
+    }
+    else{
+        arvore_t *d;
+        d = minimo((*rg)->dir);
+        (*rg)->info = d->info;
+        arvore_t *no = buscaRG( (*rg)->dir, d->info->rg);
+        removeNoRG(&no);
+    }
 }
 
 void relatorioRG(arvore_t *tree){

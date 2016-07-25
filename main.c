@@ -46,7 +46,8 @@ int main(){
 
 					if (node_rg != NULL) printa(node_rg->info);
 					else printf("RG não encontrado!\n");
-				} else {
+				}
+				else {
 					printf("Insira o Código a ser procurado: ");
 					scanf("%d", &input);
 					node_cod = buscaCOD(treeCOD, input);
@@ -65,6 +66,21 @@ int main(){
 				break;
 
 			case 4:
+				printf("Você deseja remover por Código ou RG? (0 - Código / 1 - RG)\n");
+				scanf("%d", &op2);
+				if (op2) {
+					printf("Insira o RG a ser excluído: ");
+					scanf("%d", &input);
+					node_rg = buscaRG(treeRG, input);
+					removeNoRG(&node_rg);
+
+				}
+				else{
+					printf("Insira o Código a ser excluído: ");
+					scanf("%d", &input);
+					node_cod = buscaCOD(treeCOD, input);
+					removeNoCOD(&node_cod);
+				}
 				break;
 
 			case 0:

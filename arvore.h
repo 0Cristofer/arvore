@@ -27,10 +27,10 @@ void insereRG(arvore_t **tree, arvore_t **a);
 void insereCOD(arvore_t **tree, arvore_t **a);
 void relatorioRG(arvore_t *tree);
 void relatorioCOD(arvore_t *tree);
-void removeNoRG(arvore_t *tree, int RG);
-void removeNoCOD(arvore_t *tree, int COD);
+void removeNoRG(arvore_t **rg);
+void removeNoCOD(arvore_t **cod);
 arvore_t *minimo(arvore_t *tree);
-arvore_t* buscaCOD(arvore_t *tree, int cod);
-arvore_t* buscaRG(arvore_t *tree, int rg);
+arvore_t *buscaCOD(arvore_t *tree, int cod);
+arvore_t *buscaRG(arvore_t *tree, int rg);
 
 #endif
