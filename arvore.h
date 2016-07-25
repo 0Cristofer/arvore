@@ -27,6 +27,8 @@ void insereRG(arvore_t **tree, arvore_t **a);
 void insereCOD(arvore_t **tree, arvore_t **a);
 void relatorioRG(arvore_t *tree);
 void relatorioCOD(arvore_t *tree);
-
+void removeNoRG(arvore_t *tree, int RG);
+void removeNoCOD(arvore_t *tree, int COD);
+arvore_t *minimo(arvore_t *tree);
 
 #endif
