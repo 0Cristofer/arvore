@@ -74,17 +74,6 @@ Implementação de árvore binária de busca em C
 	3 - Relatório || 4 - Remover ficha || 0 - Sair
 
 Selecione o que deseja fazer: 		=== Relatório RG ===
-		=== Relatório COD ===
-Código : 6
-narcizo , 15 anos.
-Do sexo masculino
-Portado do RG 6
-
-Código : 3
-gustavo , 20 anos.
-Do sexo masculino
-Portado do RG 3
-
 Código : 1
 Cristofer , 18 anos.
 Do sexo masculino
@@ -95,97 +84,35 @@ bruno , 19 anos.
 Do sexo masculino
 Portado do RG 2
 
-Código : 5
-felipe , 16 anos.
-Do sexo masculino
-Portado do RG 5
-
-Código : 9
-luis , 17 anos.
-Do sexo masculino
-Portado do RG 9
-
-Código : 8
-marcelo , 21 anos.
-Do sexo masculino
-Portado do RG 8
-
-Código : 7
-guilherme , 22 anos.
-Do sexo masculino
-Portado do RG 7
-
-Código : 10
-rosana , 23 anos.
-Do sexo feminino
-Portado do RG 10
-
-Códi[3;J[H[2Jgo : 11
-gostosa , 17 anos.
-Do sexo feminino
-Portado do RG 11
-
-Implementação de árvore binária de busca em C
-
-	1 - Inserir ficha || 2 - Buscar ficha
-	3 - Relatório || 4 - Remover ficha || 0 - Sair
-
-Selecione o que deseja fazer: Você deseja remover por Código ou RG? (0 - Código / 1 - RG)
-Insira o Código a ser excluído: entrando esq
-entrando esq
-entrando dir
-NULL
-Código : 2
-bruno , 19 anos.
-Do sexo masculino
-Portado do RG 2
-
-Implementação de árvore binária de busca em C
-
-	1 - Inserir ficha || 2 - Buscar ficha
-	3 - Relatório || 4 - Remover ficha || 0 - Sair
-
-Selecione o que deseja fazer: 		=== Relatório RG ===
-		=== Relatório COD ===
-Código : 6
-narcizo , 15 anos.
-Do sexo masculino
-Portado do RG 6
-
 Código : 3
 gustavo , 20 anos.
 Do sexo masculino
 Portado do RG 3
 
-Código : 1
-Cristofer , 18 anos.
-Do sexo masculino
-Portado do RG 1
-
-Código : 0
-bruno , 0 anos.
-Do sexo masculino
-Portado do RG 2
-
 Código : 5
 felipe , 16 anos.
 Do sexo masculino
 Portado do RG 5
 
-Código : 9
-luis , 17 anos.
+Código : 6
+narcizo , 15 anos.
 Do sexo masculino
-Portado do RG 9
+Portado do RG 6
+
+Código : 7
+guilherme , 22 anos.
+Do sexo masculino
+Portado do RG 7
 
 Código : 8
 marcelo , 21 anos.
 Do sexo masculino
 Portado do RG 8
 
-Código : 7
-guilherme , 22 anos.
+Código : 9
+luis , 17 anos.
 Do sexo masculino
-Portado do RG 7
+Portado do RG 9
 
 Código : 10
 rosana , 23 anos.
@@ -193,13 +120,4 @@ Do sexo feminino
 Portado do RG 10
 
 Código : 11
-gostosa , 17 anos.
-Do sexo feminino
-Portado do RG 11
-
-Implementação de árvore binária de busca em C
-
-	1 - Inserir ficha || 2 - Buscar ficha
-	3 - Relatório || 4 - Remover ficha || 0 - Sair
-
-Selecione o que deseja fazer: 
+gostosa , 17 anos

@@ -12,7 +12,7 @@ int main(){
 	int op2;
 	int input;
 	ficha_t *ficha;
-	arvore_t *node_rg, *node_cod, *treeRG, *treeCOD;
+	arvore_t *node_rg, *node_cod, *treeRG, *treeCOD, *node;
 	treeRG = NULL;
 	treeCOD = NULL;
 
@@ -59,10 +59,10 @@ int main(){
 
 			case 3:
 				printf("\t\t=== Relatório RG ===\n");
-				//relatorioRG2(treeRG);
+				relatorioRG(treeRG);
 
 				printf("\t\t=== Relatório COD ===\n");
-				relatorioCOD2(treeCOD);
+				relatorioCOD(treeCOD);
 				break;
 
 			case 4:
@@ -72,26 +72,17 @@ int main(){
 				if (op2) {
 					printf("Insira o RG a ser excluído: ");
 					scanf("%d", &input);
-					node_rg = buscaRG(treeRG, input);
-					node_cod = buscaCOD(treeCOD, node_rg->info->cod);
+					node = buscaRG(treeRG, input);
 				}
 				else{
 					printf("Insira o Código a ser excluído: ");
 					scanf("%d", &input);
-					node_cod = buscaCOD(treeCOD, input);
-					node_rg = buscaRG(treeRG, node_cod->info->rg);
+					node = buscaCOD(treeCOD, input);
 				}
 
-				ficha = node_cod->info;
-				removeNoCOD(&node_cod);
-				if(node_cod == NULL){
-					printf("NULL\n");
-				}
-				else{
-					printf("not NULL\n");
-				}
-				//removeNoRG(&node_rg);
-				printa(ficha);
+				ficha = node->info;
+				removeNoCOD((&treeCOD), node->info->cod);
+				removeNoRG((&treeRG), node->info->rg);
 				free(ficha);
 				break;
 
