@@ -81,8 +81,8 @@ int main(){
 				}
 
 				ficha = node->info;
-				removeNoCOD((&treeCOD), node->info->cod);
-				removeNoRG((&treeRG), node->info->rg);
+				removeNoCOD((&treeCOD), ficha->cod);
+				removeNoRG((&treeRG), ficha	->rg);
 				free(ficha);
 				break;
 
